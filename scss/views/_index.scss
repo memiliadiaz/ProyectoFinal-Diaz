@@ -1,0 +1,142 @@
+.grilla {
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: 1fr 0.5fr 1.5fr 3fr 0.4fr 0.4fr;
+    grid-template-areas:
+        "headerind headerind"
+        "primeraSeccion primeraSeccion"
+        "video segundaSeccion"
+        "terceraSeccion terceraSeccion"
+        "form form"
+        "footerind footerind"
+    ;
+    color: black;
+    min-height: 100vh;
+
+    .primeraSeccion {
+        grid-area: primeraSeccion;
+        background-color: #E9E9E1;
+        font-family: 'PT Sans', sans-serif;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 2% 10% 2% 10%;
+
+        .t0 {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 18px;
+        }
+    }
+
+    .video {
+        grid-area: video;
+        background-color: #E9E9E1;
+
+        video {
+            width: 100%;
+        }
+    }
+
+    .segundaSeccion {
+        grid-area: segundaSeccion;
+        background-image: url(../img/shutterstock_327302726-1500x430.jpg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .t1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            letter-spacing: 4px;
+        }
+
+        .t2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 45px;
+            letter-spacing: 5px;
+        }
+    }
+
+    .terceraSeccion {
+        grid-area: terceraSeccion;
+        background-color: #E9E9E1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2% 15% 2% 15%;
+
+        .titulogrande {
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+
+        .division {
+            margin: 20px 20px 20px 25px;
+
+
+            .titulochico {
+                font-family: 'Montserrat', sans-serif;
+                color: #6b6b67;
+                text-align: center;
+                font-size: 15px;
+                letter-spacing: 3px;
+            }
+
+            .descripcion {
+                font-family: 'Montserrat', sans-serif;
+                color: #abab35;
+                text-align: center;
+                font-size: 15px;
+                letter-spacing: 1.5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .grilla {
+        grid-template-rows: 0.5fr 0.75fr 0.5fr 0.75fr 2.5fr 0.45fr 0.15fr;
+        grid-template-areas:
+            "headerind headerind"
+            "primeraSeccion primeraSeccion"
+            "video video"
+            "segundaSeccion segundaSeccion"
+            "terceraSeccion terceraSeccion"
+            "form form"
+            "footerind footerind"
+        ;
+
+        .video {
+            display: flex;
+        }
+
+        .segundaSeccion {
+            justify-content: center;
+            align-items: flex-start;
+            padding: 10px;
+        }
+    }
+}
+
+/*DISPOSITIVO CHICOS // SM */
+@media (max-width:375px) {
+    .grilla {
+        grid-template-rows: 0.5fr 1fr 0.5fr 0.75fr 3fr 0.5fr 0.15fr;
+        grid-template-areas:
+            "headerind headerind"
+            "primeraSeccion primeraSeccion"
+            "video video"
+            "segundaSeccion segundaSeccion"
+            "terceraSeccion terceraSeccion"
+            "form form"
+            "footerind footerind"
+        ;
+    }
+}

@@ -1,0 +1,104 @@
+.grillapro {
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: 1fr 1.25fr 1.25fr 1.25fr 1.25fr 0.5fr 0.25fr;
+    grid-template-areas:
+        "headerind headerind"
+        "proyectos1 proyectos1"
+        "proyectos2 proyectos2"
+        "proyectos3 proyectos3"
+        "proyectos4 proyectos4"
+        "form form"
+        "footerind footerind"
+    ;
+    color: black;
+    min-height: 100vh;
+
+    .proyectos {
+        @extend %estiloproyectos;
+
+        .titulop {
+            @extend %estilotitulop;
+        }
+
+        .seccionproyectos {
+            display: flex;
+            flex-direction: row;
+
+            .imagenes {
+                img {
+                    width: 340px;
+                    height: 190px;
+                    margin: 15px;
+                }
+            }
+        }
+    }
+
+    .proyectos1 {
+        grid-area: proyectos1;
+    }
+
+    .proyectos2 {
+        grid-area: proyectos2;
+    }
+
+    .proyectos3 {
+        grid-area: proyectos3;
+    }
+
+    .proyectos4 {
+        grid-area: proyectos4;
+    }
+}
+
+//RESPONSIVE DESING - MEDIA QUERY - MOBILE LAST/
+//MOBILE LAST = MAX-WIDTH/
+@media (max-width: 768px) {
+    .grillapro {
+        grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 0.5fr 0.35fr;
+
+        .proyectos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .seccionproyectos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .imagenes {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+
+/*DISPOSITIVO CHICOS // SM */
+@media (max-width: 375px) {
+    .grillapro {
+        grid-template-rows: 1fr 4fr 4fr 4fr 4fr 0.5fr 0.4fr;
+
+        .proyectos {
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            .seccionproyectos {
+                display: flex;
+                flex-direction: column;
+
+                .imagenes {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

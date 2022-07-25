@@ -1,0 +1,502 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+.headerind {
+  grid-area: headerind;
+  background-image: url(../img/fondo.jpg);
+  color: #727069; }
+  .headerind .navbar .container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px; }
+    .headerind .navbar .container-fluid .logoentero {
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .headerind .navbar .container-fluid .logoentero .nombrelogo h1 {
+        font-family: 'Poiret One', cursive;
+        font-weight: bold;
+        color: #727069;
+        font-size: 33px;
+        letter-spacing: 1.5px; }
+      .headerind .navbar .container-fluid .logoentero .nombrelogo h3 {
+        font-family: 'Antic', sans-serif;
+        font-weight: bold;
+        color: #727069;
+        font-size: 15.5px;
+        letter-spacing: 4px; }
+    .headerind .navbar .container-fluid .navbar-toggler:hover {
+      transform: scale(1.15); }
+    .headerind .navbar .container-fluid .collapse .items {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      list-style: none; }
+      .headerind .navbar .container-fluid .collapse .items li {
+        margin: 10px; }
+        .headerind .navbar .container-fluid .collapse .items li:hover {
+          transform: scale(1.15); }
+        .headerind .navbar .container-fluid .collapse .items li a {
+          text-decoration: none;
+          font-family: 'Antic', sans-serif;
+          color: #727069;
+          font-size: large; }
+          .headerind .navbar .container-fluid .collapse .items li a:hover {
+            color: #D1D14B; }
+    .headerind .navbar .container-fluid .collapse .form-inline {
+      display: flex;
+      flex-direction: row; }
+      .headerind .navbar .container-fluid .collapse .form-inline button {
+        margin: 10px;
+        font-weight: bold;
+        color: #C9C91E;
+        border-color: #C9C91E;
+        border-width: 2px; }
+        .headerind .navbar .container-fluid .collapse .form-inline button:hover {
+          transform: scale(1.15); }
+
+.form {
+  grid-area: form;
+  background-color: #E9E9E1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; }
+  .form h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium; }
+  .form div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px; }
+    .form div input {
+      height: 30px;
+      width: 350px;
+      border-radius: 15px;
+      background-color: #c6c6c6;
+      text-align: center;
+      margin-top: 10px;
+      border-width: 0px; }
+    .form div input[type=submit]:hover {
+      background-color: #D1D14B;
+      color: white;
+      transform: scale(1.15); }
+
+.footerind {
+  grid-area: footerind;
+  background-image: linear-gradient(to top, #e1e19b, #E9E9E1);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  font-size: 30px;
+  padding: 30px;
+  margin-top: auto; }
+  .footerind a {
+    color: #8a30be; }
+    .footerind a:hover {
+      color: #b6a1c2;
+      transform: scale(1.5); }
+
+.grilla {
+  grid-gap: 5px;
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: 1fr 0.5fr 1.5fr 3fr 0.4fr 0.4fr;
+  grid-template-areas: "headerind headerind" "primeraSeccion primeraSeccion" "video segundaSeccion" "terceraSeccion terceraSeccion" "form form" "footerind footerind";
+  color: black;
+  min-height: 100vh; }
+  .grilla .primeraSeccion {
+    grid-area: primeraSeccion;
+    background-color: #E9E9E1;
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 2% 10% 2% 10%; }
+    .grilla .primeraSeccion .t0 {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 18px; }
+  .grilla .video {
+    grid-area: video;
+    background-color: #E9E9E1; }
+    .grilla .video video {
+      width: 100%; }
+  .grilla .segundaSeccion {
+    grid-area: segundaSeccion;
+    background-image: url(../img/shutterstock_327302726-1500x430.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .grilla .segundaSeccion .t1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      letter-spacing: 4px; }
+    .grilla .segundaSeccion .t2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 45px;
+      letter-spacing: 5px; }
+  .grilla .terceraSeccion {
+    grid-area: terceraSeccion;
+    background-color: #E9E9E1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2% 15% 2% 15%; }
+    .grilla .terceraSeccion .titulogrande {
+      font-family: 'Montserrat', sans-serif;
+      color: black;
+      text-align: center;
+      font-size: 30px;
+      letter-spacing: 4px;
+      margin-bottom: 10px; }
+    .grilla .terceraSeccion .division {
+      margin: 20px 20px 20px 25px; }
+      .grilla .terceraSeccion .division .titulochico {
+        font-family: 'Montserrat', sans-serif;
+        color: #6b6b67;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 3px; }
+      .grilla .terceraSeccion .division .descripcion {
+        font-family: 'Montserrat', sans-serif;
+        color: #abab35;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 1.5px; }
+
+@media (max-width: 768px) {
+  .grilla {
+    grid-template-rows: 0.5fr 0.75fr 0.5fr 0.75fr 2.5fr 0.45fr 0.15fr;
+    grid-template-areas: "headerind headerind" "primeraSeccion primeraSeccion" "video video" "segundaSeccion segundaSeccion" "terceraSeccion terceraSeccion" "form form" "footerind footerind"; }
+    .grilla .video {
+      display: flex; }
+    .grilla .segundaSeccion {
+      justify-content: center;
+      align-items: flex-start;
+      padding: 10px; } }
+
+/*DISPOSITIVO CHICOS // SM */
+@media (max-width: 375px) {
+  .grilla {
+    grid-template-rows: 0.5fr 1fr 0.5fr 0.75fr 3fr 0.5fr 0.15fr;
+    grid-template-areas: "headerind headerind" "primeraSeccion primeraSeccion" "video video" "segundaSeccion segundaSeccion" "terceraSeccion terceraSeccion" "form form" "footerind footerind"; } }
+
+.grillanos {
+  grid-gap: 5px;
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: 0.65fr 2.5fr 0.25fr 0.25fr;
+  grid-template-areas: "headerind headerind" "nosotros nosotros" "form form" "footerind footerind";
+  color: black;
+  min-height: 100vh; }
+  .grillanos .nosotros {
+    grid-area: nosotros;
+    background-image: url(../img/nosotros.jpg);
+    background-position: relative;
+    background-size: cover; }
+    .grillanos .nosotros .t4 {
+      margin: 200px 300px 200px 300px;
+      padding: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 23px;
+      color: white;
+      text-align: center; }
+
+/*RESPONSIVE DESING - MEDIA QUERY - MOBILE LAST*/
+/*MOBILE LAST = MAX-WIDTH*/
+@media (max-width: 768px) {
+  .grillanos {
+    grid-template-rows: 0.25fr 2.5fr 0.25fr 0.25fr;
+    grid-template-areas: "headerind headerind" "nosotros nosotros" "form form" "footerind footerind"; }
+    .grillanos .nosotros .t4 {
+      margin: 50px 100px 50px 100px;
+      font-size: 18px; } }
+
+/*DISPOSITIVO CHICOS // SM */
+@media (max-width: 375px) {
+  .grillanos {
+    grid-template-rows: 0.5fr 2fr 0.25fr 0.25fr;
+    grid-template-areas: "headerind headerind" "nosotros nosotros" "form form" "footerind footerind"; }
+    .grillanos .nosotros .t4 {
+      margin: 25px 50px 25px 50px;
+      font-size: 15px; } }
+
+.grillaser {
+  grid-gap: 5px;
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr 0.25fr;
+  grid-template-areas: "headerind headerind" "servicios1 servicios1" "servicios2 servicios2" "form form" "footerind footerind";
+  color: black; }
+  .grillaser .servicios1 {
+    grid-area: servicios1;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px 50px 10px;
+    justify-content: space-between;
+    background-color: #E9E9E1; }
+    .grillaser .servicios1 section {
+      width: 350px;
+      height: 200px;
+      margin: 50px;
+      text-align: justify;
+      justify-content: center; }
+      .grillaser .servicios1 section img {
+        width: 340px;
+        height: 190px; }
+  .grillaser .servicios2 {
+    grid-area: servicios2;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 50px 200px 50px;
+    justify-content: space-between;
+    background-color: #E9E9E1; }
+    .grillaser .servicios2 section {
+      width: 350px;
+      height: 200px;
+      margin: 50px;
+      text-align: justify;
+      justify-content: center; }
+      .grillaser .servicios2 section img {
+        width: 340px;
+        height: 190px; }
+
+/*RESPONSIVE DESING - MEDIA QUERY - MOBILE LAST*/
+/*MOBILE LAST = MAX-WIDTH*/
+@media (max-width: 768px) {
+  .grillaser {
+    grid-template-rows: 0.5fr 5fr 5fr 0.5fr 0.3fr; }
+    .grillaser .servicios {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0px 0px 0px; }
+      .grillaser .servicios .seccionservicios {
+        height: 100%; } }
+
+/*DISPOSITIVO CHICOS // SM */
+@media (max-width: 375px) {
+  .grillaser {
+    grid-template-rows: 0.5fr 3fr 3fr 0.3fr 0.2fr; }
+    .grillaser .servicios {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0px 0px 0px; }
+      .grillaser .servicios .seccionservicios {
+        height: 100%; } }
+
+.grillapro {
+  grid-gap: 5px;
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: 1fr 1.25fr 1.25fr 1.25fr 1.25fr 0.5fr 0.25fr;
+  grid-template-areas: "headerind headerind" "proyectos1 proyectos1" "proyectos2 proyectos2" "proyectos3 proyectos3" "proyectos4 proyectos4" "form form" "footerind footerind";
+  color: black;
+  min-height: 100vh; }
+  .grillapro .proyectos .seccionproyectos {
+    display: flex;
+    flex-direction: row; }
+    .grillapro .proyectos .seccionproyectos .imagenes img {
+      width: 340px;
+      height: 190px;
+      margin: 15px; }
+  .grillapro .proyectos1 {
+    grid-area: proyectos1; }
+  .grillapro .proyectos2 {
+    grid-area: proyectos2; }
+  .grillapro .proyectos3 {
+    grid-area: proyectos3; }
+  .grillapro .proyectos4 {
+    grid-area: proyectos4; }
+
+@media (max-width: 768px) {
+  .grillapro {
+    grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 0.5fr 0.35fr; }
+    .grillapro .proyectos {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .grillapro .proyectos .seccionproyectos {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .grillapro .proyectos .seccionproyectos .imagenes {
+          display: flex;
+          flex-direction: row;
+          align-items: center; } }
+
+/*DISPOSITIVO CHICOS // SM */
+@media (max-width: 375px) {
+  .grillapro {
+    grid-template-rows: 1fr 4fr 4fr 4fr 4fr 0.5fr 0.4fr; }
+    .grillapro .proyectos {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .grillapro .proyectos .seccionproyectos {
+        display: flex;
+        flex-direction: column; }
+        .grillapro .proyectos .seccionproyectos .imagenes {
+          display: flex;
+          flex-direction: column; } }
+
+.grillacon {
+  grid-gap: 5px;
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: 0.35fr 1.5fr 1fr 0.35fr 0.2fr;
+  grid-template-areas: "headerind headerind" "contacto contacto" "accordion accordion" "form form" "footerind footerind";
+  color: black;
+  min-height: 100vh; }
+  .grillacon .contacto {
+    grid-area: contacto;
+    background-image: url(../img/fondocon.jpg);
+    background-position: relative;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; }
+    .grillacon .contacto .contactanos {
+      display: flex;
+      justify-content: center;
+      font-family: 'Antic', sans-serif;
+      color: #D1D14B;
+      text-align: center;
+      font-size: 35px;
+      letter-spacing: 6px;
+      margin: 20px; }
+    .grillacon .contacto .cuadros {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .grillacon .contacto .cuadros input {
+        height: 30px;
+        width: 500px;
+        border-radius: 5px;
+        background-color: #c6c6c6;
+        text-align: center;
+        margin-top: 10px;
+        border-width: 0px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #727069; }
+      .grillacon .contacto .cuadros input[type=text]:hover {
+        background-color: #cccc90;
+        color: white; }
+      .grillacon .contacto .cuadros input[type=number]:hover {
+        background-color: #cccc90;
+        color: white; }
+      .grillacon .contacto .cuadros input[type=email]:hover {
+        background-color: #cccc90;
+        color: white; }
+      .grillacon .contacto .cuadros textarea {
+        border-radius: 5px;
+        background-color: #c6c6c6;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-width: 0px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #727069;
+        resize: none; }
+        .grillacon .contacto .cuadros textarea:hover {
+          background-color: #cccc90;
+          color: white; }
+      .grillacon .contacto .cuadros .boton {
+        width: 300px;
+        display: flex;
+        justify-content: center; }
+        .grillacon .contacto .cuadros .boton:hover {
+          transform: scale(1.15); }
+  .grillacon .accordion {
+    grid-area: accordion;
+    background-color: #E9E9E1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 20px 40px 20px 40px; }
+    .grillacon .accordion .tituloaccordion {
+      font-family: 'Montserrat', sans-serif;
+      color: black;
+      text-align: center;
+      font-size: 25px;
+      letter-spacing: 3px; }
+    .grillacon .accordion .accordion-item {
+      font-family: 'Montserrat', sans-serif;
+      color: black;
+      text-align: justify;
+      font-size: 15px; }
+      .grillacon .accordion .accordion-item .accordion-button {
+        background-color: #E9E9E1; }
+      .grillacon .accordion .accordion-item .accordion-body {
+        background-color: #fafad7; }
+
+/*RESPONSIVE DESING - MEDIA QUERY - MOBILE LAST*/
+/*MOBILE LAST = MAX-WIDTH*/
+@media (max-width: 768px) {
+  .grillacon {
+    grid-template-rows: 0.5fr 1.75fr 1.5fr 0.25fr 0.25fr; } }
+
+/*DISPOSITIVO CHICOS // SM */
+@media (max-width: 375px) {
+  .grillacon {
+    grid-template-rows: 0.5fr 2fr 2fr 0.25fr 0.25fr; }
+    .grillacon .contacto .contactanos {
+      font-size: 25px; }
+    .grillacon .contacto .cuadros input {
+      height: 25px;
+      width: 300px; }
+    .grillacon .contacto .cuadros textarea {
+      width: 300px; } }
+
+.grillaser .servicios1 section .titulo, .grillaser .servicios2 section .titulo {
+  font-family: 'Montserrat', sans-serif;
+  color: #D1D14B;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin-bottom: 10px; }
+
+.grillaser .servicios1 section .parrafo, .grillaser .servicios2 section .parrafo {
+  font-family: 'Montserrat', sans-serif;
+  color: #979791;
+  text-align: center;
+  font-size: 15px;
+  margin: 5px 5px 10px 5px; }
+
+/*PROYECTOS*/
+.grillapro .proyectos {
+  background-color: #E9E9E1;
+  display: flex;
+  flex-direction: column; }
+
+.grillapro .proyectos .titulop {
+  display: flex;
+  justify-content: center;
+  font-family: 'Antic', sans-serif;
+  color: #C9C91E;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 8px;
+  margin: 10px; }

@@ -1,0 +1,110 @@
+.grillaser {
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr 0.25fr;
+    grid-template-areas:
+        "headerind headerind"
+        "servicios1 servicios1"
+        "servicios2 servicios2"
+        "form form"
+        "footerind footerind"
+    ;
+    color: black;
+    
+
+    .servicios1 {
+        grid-area: servicios1;
+        display: flex;
+        flex-direction: row;
+        padding: 5px 10px 50px 10px;
+        justify-content: space-between;
+        background-color: #E9E9E1;
+
+        section {
+            width: 350px;
+            height: 200px;
+            margin: 50px;
+            text-align: justify;
+            justify-content: center;
+
+            img {
+                width: 340px;
+                height: 190px;
+            }
+
+            .titulo {
+                @extend %estilotitulo;
+            }
+
+            .parrafo {
+                @extend %estiloparrafo;
+            }
+        }
+    }
+
+    .servicios2 {
+        grid-area: servicios2;
+        display: flex;
+        flex-direction: row;
+        padding: 5px 50px 200px 50px;
+        justify-content: space-between;
+        background-color: #E9E9E1;
+
+        section {
+            width: 350px;
+            height: 200px;
+            margin: 50px;
+            text-align: justify;
+            justify-content: center;
+
+            img {
+                width: 340px;
+                height: 190px;
+            }
+
+            .titulo {
+                @extend %estilotitulo;
+            }
+
+            .parrafo {
+                @extend %estiloparrafo;
+            }
+        }
+    }
+}
+
+/*RESPONSIVE DESING - MEDIA QUERY - MOBILE LAST*/
+/*MOBILE LAST = MAX-WIDTH*/
+@media (max-width: 768px) {
+    .grillaser {
+        grid-template-rows: 0.5fr 5fr 5fr 0.5fr 0.3fr;
+
+        .servicios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0px 0px 0px;
+            .seccionservicios{
+                height: 100%;
+            }
+        }
+    }
+}
+
+/*DISPOSITIVO CHICOS // SM */
+@media (max-width: 375px) {
+    .grillaser {
+        grid-template-rows: 0.5fr 3fr 3fr 0.3fr 0.2fr;
+
+        .servicios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0px 0px 0px;
+            .seccionservicios {
+                height: 100%;
+            }
+        }
+    }
+}

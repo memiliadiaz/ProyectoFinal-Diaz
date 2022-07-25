@@ -1,0 +1,78 @@
+.headerind {
+    grid-area: headerind;
+    background-image: url(../img/fondo.jpg);
+    color: #727069;
+    .navbar{
+        .container-fluid{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px;
+            .logoentero {
+                margin: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .nombrelogo{
+                    h1 {
+                        font-family: 'Poiret One', cursive;
+                        font-weight: bold;
+                        color: #727069;
+                        font-size: 33px;
+                        letter-spacing: 1.5px;
+                    }
+                    h3 {
+                        font-family: 'Antic', sans-serif;
+                        font-weight: bold;
+                        color: #727069;
+                        font-size: 15.5px;
+                        letter-spacing: 4px;
+                    }
+                }
+            }
+            .navbar-toggler:hover{
+                transform: scale(1.15);
+            }
+            .collapse{
+                .items {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    list-style: none;
+                    li {
+                        margin: 10px;
+                        &:hover {
+                            transform: scale(1.15);
+                        }
+                        a{
+                            text-decoration: none;
+                            font-family: 'Antic', sans-serif;
+                            color: #727069;
+                            font-size: large;
+                            &:hover {
+                                color: #D1D14B;
+                            }
+                        }
+                    }
+                }
+                .form-inline{
+                    display: flex;
+                    flex-direction: row;
+                    button{
+                        margin: 10px;
+                        font-weight: bold;
+                        color: #C9C91E;
+                        border-color: #C9C91E;
+                        border-width: 2px;
+                        &:hover{
+                            transform: scale(1.15);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

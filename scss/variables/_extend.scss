@@ -1,0 +1,34 @@
+%estilotitulo {
+    font-family: 'Montserrat', sans-serif;
+    color: #D1D14B;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+%estiloparrafo {
+    font-family: 'Montserrat', sans-serif;
+    color: #979791;
+    text-align: center;
+    font-size: 15px;
+    margin: 5px 5px 10px 5px;
+}
+
+/*PROYECTOS*/
+%estiloproyectos {
+    background-color: #E9E9E1;
+    display: flex;
+    flex-direction: column;
+}
+
+%estilotitulop {
+    display: flex;
+    justify-content: center;
+    font-family: 'Antic', sans-serif;
+    color: #C9C91E;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 8px;
+    margin: 10px;
+}
